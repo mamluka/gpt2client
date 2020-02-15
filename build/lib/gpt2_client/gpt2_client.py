@@ -150,7 +150,7 @@ class GPT2Client(object):
                 print (colored('Generating sample...', 'yellow'))
                 
                 generated = 0
-
+                text = ''
                 while n_samples == 0 or generated < n_samples:
                     out = sess.run(output)
                     for i in range(batch_size):
